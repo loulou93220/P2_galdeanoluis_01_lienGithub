@@ -288,7 +288,194 @@ p {
 }
 
 
-/* Footer */
+/* DEBUT DU CORPS */
+
+
+/* DEBUT HEBERGEMENT */
+
+.sizehebergement {
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.sizepopulaire {
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.imghebergement1 {
+    background-image: url("./img/auberge_cannebiere.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergement2 {
+    background-image: url("./img/hotel_du_port.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergement3 {
+    background-image: url("./img/hotel_les_mouettes.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergement4 {
+    background-image: url("./img/hotel_de_la_mer.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergement5 {
+    background-image: url("./img/auberge_panier.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imghebergement6 {
+    background-image: url("./img/hotel_chez_amina.jpg");
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.blochebergements {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cubehebergement {
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+
+.cubehebergement:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.bloc1 {
+    margin-bottom: 20px;
+}
+
+.bloc2 {
+    margin-top: 20px;
+}
+
+.cubedetailhebergement {
+    width: 90%;
+    height: 40%;
+    padding-left: 10px;
+}
+
+.no_margin {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* FIN HEBERGEMENT */
+
+
+/* DEBUT LES PLUS POPULAIRES */
+
+.blocpopulaire {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imgpopulaire1 {
+    background-image: url("./img/hotel_le_soleil_du_matin.jpg");
+    width: 35%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.imgpopulaire2 {
+    background-image: url("./img/au_coeur_de_leau.jpg");
+    width: 35%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.imgpopulaire3 {
+    background-image: url("./img/hotel_tout_bleu_et_blanc.jpg");
+    width: 35%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.cubepopulaire {
+    background-color: white;
+    height: auto;
+    padding: 1% 0 1% 1%;
+    border-radius: 20px;
+}
+
+.cubepopulaire:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.blocpopulaire12 {
+    margin-bottom: 22px;
+}
+
+.cubedetailpopulaire {
+    width: 60%;
+    padding-left: 5%;
+    margin-top: 0;
+}
+
+.titlepop {
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+.marginstar {
+    margin-bottom: 4em;
+}
+
+
+/* FIN LES PLUS POPULAIRES */
+
+
+/* FIN DU CORPS */
+
+
+/* DEBUT DU FOOTER */
 
 footer {
     padding: 40px 50px 50px;
@@ -308,3 +495,6 @@ footer a:hover {
     font-weight: 600;
     color: #0065FC;
 }
+
+
+/* FIN DU FOOTER */
