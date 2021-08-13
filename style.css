@@ -609,3 +609,231 @@ footer a:hover {
 
 
 /* FIN DU FOOTER */
+
+
+/*version responsive*/
+
+@media screen and (max-width: 1295px) {
+    .sizeLiens12 {
+        margin-left: 35%;
+    }
+    /*.cubedetailhebergement{
+        min-height: 150px;
+    }*/
+    /*à enlever car rétrécit la taille des photos en version tablette*/
+    .sizehebergement {
+        min-height: auto;
+        padding: 20px;
+    }
+    .sizepopulaire {
+        min-height: auto;
+        padding: 20px;
+    }
+    .tablettesizetitrepop {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .sizetitreh {
+        font-size: 16px;
+    }
+    .sizesoustitre {
+        font-size: 14.5px;
+    }
+    footer div {
+        padding: 10px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .mobilefiltrewrap {
+        /*éléments des filtres qui s'adaptent à la taille de l'écran*/
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtreTexteIcon {
+        margin-bottom: 20px;
+    }
+    #hebergement {
+        flex-direction: column-reverse;
+        /*mettre les plus populaire en haut de hébergements à marseille (intervertir les 2 blocs)*/
+        width: 100%;
+    }
+    .blocpopulaire {
+        flex: none;
+        width: 90%;
+        margin-left: 0;
+        padding: 5%;
+    }
+    .blochebergements {
+        flex: none;
+        width: 90%;
+        margin-right: 0;
+        margin-top: 5px;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .sizeLiens {
+        width: 90%;
+    }
+    .sizeLiens12 {
+        margin-left: 20%;
+    }
+    .blochebergements {
+        height: auto;
+    }
+    .bloc1 {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .bloc2 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .cubehebergement {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cubedetailhebergement {
+        min-height: auto;
+    }
+    .blocactivite {
+        flex-direction: column;
+        height: auto;
+    }
+    .cubeactivite {
+        width: 100%;
+        margin-bottom: 20px;
+        /*pour séparer les blocs*/
+    }
+    .blocactivite2356 {
+        width: 100%;
+        height: auto;
+    }
+    .cubeactivite2356 {
+        margin-bottom: 20px;
+        /*pour avoir les mêmes marges*/
+    }
+    .imgactivite1,
+    .imgactivite2,
+    .imgactivite3,
+    .imgactivite4,
+    .imgactivite5,
+    .imgactivite6 {
+        height: 200px;
+    }
+    .activite {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sizeLiens12 {
+        order: 1;
+        /*faire passer hébergements et activités après s'inscrire sur la barre de navigation*/
+        width: 100%;
+        margin-left: 0;
+    }
+    .sizeLien {
+        flex-direction: row;
+    }
+    .sizeLienmobile {
+        width: 50%;
+        border-top: none;
+        border-bottom: 5px solid #F2F2F2;
+    }
+    .sizeLiens {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .sizeLienmobile:hover {
+        border-top: 0;
+        border-bottom: 5px solid #0065FC;
+    }
+    .mobiletitreh1 {
+        font-size: x-large;
+    }
+    .recherche {
+        width: 200px;
+        border-top: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+        font-size: 18px;
+    }
+    .bordureSearch {
+        width: auto;
+        border: none;
+    }
+    .boutonSearch {
+        width: 50px;
+        border-radius: 15px;
+    }
+    .mobileinformation {
+        padding-left: 5%;
+        margin-bottom: 10px;
+    }
+    /*pour avoir l'effet loupe en mobile et rechercher en desktop*/
+    .desktopnone {
+        display: block;
+    }
+    .mobilenone {
+        display: none;
+    }
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .margeFiltre {
+        padding-left: 5%;
+        margin-bottom: auto;
+        margin-top: 15px;
+    }
+    .mobileeconomique {
+        margin-right: 5px;
+    }
+    .mobilefamilial {
+        margin-right: 0;
+    }
+    .filtreText {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .blocpopulaire {
+        border-radius: 0;
+    }
+    .blochebergements {
+        background-color: white;
+    }
+    .mobiletitreprgrph {
+        padding-left: 5%;
+        margin-top: 0;
+    }
+    .blocactivite {
+        padding: 5%;
+        width: 90%;
+    }
+    .marginstar {
+        margin-bottom: 4em;
+    }
+    .cubedetailpopulaire {
+        width: 60%;
+        padding-left: 5%;
+        margin-top: 0;
+    }
+    footer {
+        flex-direction: column;
+        padding: 45px 30px;
+        margin: 0em;
+    }
+    footer div {
+        padding: 0;
+        margin: 0;
+    }
+}
