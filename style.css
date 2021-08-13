@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+/*police personnalisée*/
+
+
+/* DEBUT DES REFERENCES COULEURS */
+
+.colorbleu {
+    color: #0065FC;
+}
+
+.colorbleuclair {
+    color: #DEEBFF;
+}
+
+.colorgris {
+    color: #F2F2F2;
+}
+
+.backbleu {
+    background-color: #0065FC;
+}
+
+.backbleuclair {
+    background-color: #DEEBFF;
+}
+
+.backgris {
+    background-color: #F2F2F2;
+}
+
+.colorLien2 {
+    color: black;
+}
+
+
+/* FIN DES REFERENCES COULEURS */
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    width: auto;
+    margin: auto;
+    max-width: 1440px;
+}
+
+body {
+    margin: 0em 4em;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.decorationNone {
+    text-decoration: none;
+}
+
+.textegras {
+    font-weight: bold;
+}
+
+.bordureNone {
+    border: none;
+}
+
+
+/*espacer les élements sans qu'il n'y ait une marge entre eux*/
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*liens de navigation*/
+
+
+/*largeur de la div navigation*/
+
+.sizeLiens {
+    width: 100%;
+}
+
+.sizeLiens12 {
+    margin-left: 60%;
+}
+
+
+/*metre trait au dessus de hébergement*/
+
+.sizeLien {
+    width: 140px;
+    height: 99px;
+}
+
+
+/*trait au dessus de "hébergements"*/
+
+.bordureNav {
+    border-top: 1px solid transparent;
+}
+
+.bordureNav:hover {
+    border-top: 1px solid #0065FC;
+    cursor: pointer;
+}
+
+.bordureNav:hover>a {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+
+/*rajouter une hauteur au lien de navigation*/
+
+.sizeNav {
+    height: auto;
+}
+
+.logo {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+/*header*/
+
+.desktopnone {
+    display: none;
+}
+
+.bordureSearch {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #F2F2F2;
+}
+
+.iconSize {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.recherche {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.paddingSearch {
+    padding-left: 20px;
+    /*décaler le texte*/
+}
+
+.boutonSearch {
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+.boutonSearch:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+
+/*filtres*/
+
+.filtre {
+    display: flex;
+    align-items: center;
+}
+
+.margeFiltre {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.margeentrettrefiltre {
+    margin-right: 20px;
+}
+
+.filtreTexteIcon {
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.filtreTexteIcon:hover>.filtreText {
+    color: #0065FC;
+    /*changement de couleur quand souris passe sur le filtre*/
+}
+
+.filtreTexteIcon:hover>.filtreIcons {
+    color: white;
+    background-color: #0065FC;
+}
+
+.filtreText {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.filtreText:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    /*effet survol supplémentaire sur le texte des categories de filtre*/
+}
+
+.filtreIcons {
+    border-radius: 25px;
+    margin-left: -2px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+
+/*barre information*/
+
+.information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.parentIcon {
+    /*cercle autour de l'icon*/
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    color: #F2F2F2;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+    margin: 0em -4em;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    font-weight: 600;
+    color: #0065FC;
+}

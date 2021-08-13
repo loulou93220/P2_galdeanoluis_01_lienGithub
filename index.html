@@ -5,62 +5,79 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d79397626.js" crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet">
 </head>
 
 <body>
     <!--DEBUT BAR DE NAVIGATION -->
-    <nav>
-        <div>
-            <div>
-                <img src="./img/logo.png" alt="logo">
+    <nav class="sizeNav">
+        <div class="sizeLiens flexBetween">
+            <div class="mobiletitreprgrph"> <img class="logo" src="./img/logo.png" alt="logo"></div>
+            <div class="sizeLiens12 flexCentre">
+                <div class="sizeLien sizeLienmobile flexCentre bordureNav"><a class="colorLien2  colorbleu decorationNone" href="#hebergement">Hébergements</a></div>
+                <div class="sizeLien sizeLienmobile flexCentre bordureNav"><a class="colorLien2 decorationNone" href="#activites">Activités</a></div>
             </div>
-            <div>
-                <div><a href="#hebergement">Hébergements</a></div>
-                <div><a href="#activites">Activités</a></div>
-            </div>
-            <div><a href="#">S'inscrire</a></div>
-
+            <div class="sizeLien flexCentre bordureNav"><a class="textegras colorbleu decorationNone" href="#">S'inscrire</a></div>
         </div>
     </nav>
     <!--FIN BAR DE NAVIGATION -->
     <!--DEBUT HEADER ET FILTRES -->
     <header>
         <section>
-            <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <!-- DEBUT TITRE DE PAGE -->
+            <div class="mobiletitreprgrph">
+                <h1 class="textegras">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <div>
+            <!-- FIN TITRE DE PAGE -->
 
-                <div><input type="search" value="Marseille, France"></div>
-                <div>
-                    <span>Rechercher</span>
+            <!-- DEBUT BARRE DE RECHERCHE -->
+            <div class="bordureSearch flexCentre">
+                <div class="backgris flexCentre iconSize"><i class="fas fa-map-marker-alt"></i></div>
+                <div><input class="recherche flexCentre bordureNone paddingSearch" type="search" value="Marseille, France"></div>
+                <div class="backbleu flexCentre boutonSearch">
+                    <span class="mobilenone">Rechercher</span>
+                    <span class="desktopnone"><i class="fas fa-search"></i></span> </div>
+            </div>
+            <!-- FIN BARRE DE RECHERCHE -->
+            <!-- DEBUT DES FILTRES -->
+            <div class="mobilefiltrewrap filtre margeFiltre">
+                <div class="margeentrettrefiltre">
+                    <h3>Filtres</h3>
                 </div>
-                <div>
-                    <div>
-                        <h3>Filtres</h3>
+                <div class="flexAround">
+                    <div class="mobileeconomique flexBetween filtreTexteIcon">
+                        <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreText textegras flexCentre">Economique</div>
                     </div>
-                    <div>
-                        <div>
-                            <div>Economique</div>
-                        </div>
-                        <div>
-
-                            <div>Familial</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>Romantique</div>
-                        </div>
-                        <div>
-                            <div>Animaux autorisés</div>
-                        </div>
+                    <div class="flexBetween filtreTexteIcon">
+                        <i class="fas fa-child fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreText textegras flexCentre">Familial</div>
                     </div>
                 </div>
-                <div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="mobilefamilial mobilefiltrewrap flexAround">
+                    <div class="flexBetween filtreTexteIcon">
+                        <i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreText textegras flexCentre">Romantique</div>
+                    </div>
+                    <div class="flexBetween filtreTexteIcon">
+                        <i class="fas fa-dog fa-lg filtreIcons flexCentre"></i>
+                        <div class="filtreText textegras flexCentre">Animaux autorisés</div>
+                    </div>
                 </div>
+            </div>
+            <!-- FIN DES FILTRES -->
+            <div class="mobileinformation information">
+                <div class="parentIcon flexCentre"><i class="fas fa-info fa-xs colorbleu"></i></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
     </header>
@@ -207,9 +224,9 @@
     </section>
     <!--  FIN ACTIVITES -->
     <!-- DEBUT FOOTER -->
-    <footer>
+    <footer class="flex">
         <!-- DEBUT DIV A PROPOS -->
-        <div>
+        <div class="about">
             <h3>A propos</h3>
             <ul>
                 <li><a href="#">Fonctionnement du site</a></li>
@@ -219,7 +236,7 @@
         </div>
         <!-- FIN DIV A PROPOS -->
         <!-- DEBUT DIV NOS HEBERGEMENTS -->
-        <div>
+        <div class="ourHotels">
             <h3>Nos hébergements</h3>
             <ul>
                 <li><a href="#">Charte qualité</a></li>
@@ -228,7 +245,7 @@
         </div>
         <!-- FIN DIV NOS HEBERGEMENTS -->
         <!-- DEBUT DIV ASSISTANCE -->
-        <div>
+        <div class="assistance">
             <h3>Assistance</h3>
             <ul>
                 <li><a href="#">Centre d'aide</a></li>
