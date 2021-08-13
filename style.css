@@ -2,40 +2,6 @@
 
 /*police personnalisée*/
 
-
-/* DEBUT DES REFERENCES COULEURS */
-
-.colorbleu {
-    color: #0065FC;
-}
-
-.colorbleuclair {
-    color: #DEEBFF;
-}
-
-.colorgris {
-    color: #F2F2F2;
-}
-
-.backbleu {
-    background-color: #0065FC;
-}
-
-.backbleuclair {
-    background-color: #DEEBFF;
-}
-
-.backgris {
-    background-color: #F2F2F2;
-}
-
-.colorLien2 {
-    color: black;
-}
-
-
-/* FIN DES REFERENCES COULEURS */
-
 html,
 body {
     font-family: 'Raleway', sans-serif;
@@ -54,15 +20,9 @@ body {
 }
 
 ul {
-    align-items: flex-start;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-li {
-    list-style-type: none;
-    display: flex;
 }
 
 a {
@@ -70,17 +30,12 @@ a {
     color: inherit;
 }
 
-h3 {
-    font-size: 18px;
-}
-
-p {
-    font-size: 17px;
-}
-
 .flex {
     display: flex;
 }
+
+
+/*classe général qui permet de centrer tous les éléments au milieu*/
 
 .flexCentre {
     display: flex;
@@ -98,12 +53,79 @@ p {
     text-decoration: none;
 }
 
+ul {
+    align-items: flex-start;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+}
+
 .textegras {
+    /*police gras*/
     font-weight: bold;
 }
 
 .bordureNone {
     border: none;
+}
+
+.flexColumnCentre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flexColumnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 17px;
+}
+
+
+/*couleur de la page*/
+
+.colorbleu {
+    color: #0065FC;
+}
+
+.colorbleuclair {
+    color: #DEEBFF;
+}
+
+.colorgris {
+    color: #F2F2F2;
+}
+
+
+/*couleur background*/
+
+.backbleu {
+    background-color: #0065FC;
+}
+
+.backbleuclair {
+    background-color: #DEEBFF;
+}
+
+.backgris {
+    background-color: #F2F2F2;
 }
 
 
@@ -127,6 +149,13 @@ p {
 
 .sizeLiens12 {
     margin-left: 60%;
+}
+
+
+/*couleur de la barre de navigation*/
+
+.colorLien2 {
+    color: black;
 }
 
 
@@ -164,6 +193,9 @@ p {
 .logo {
     width: 120px;
     height: 50px;
+}
+
+.margeLogo {
     margin-bottom: 10px;
 }
 
@@ -288,10 +320,7 @@ p {
 }
 
 
-/* DEBUT DU CORPS */
-
-
-/* DEBUT HEBERGEMENT */
+/*hébergements*/
 
 .sizehebergement {
     flex: 2;
@@ -400,10 +429,10 @@ p {
 }
 
 
-/* FIN HEBERGEMENT */
+/*suppression des marges pour les libellés et descriptions des logements à Marseille*/
 
 
-/* DEBUT LES PLUS POPULAIRES */
+/*les plus populaires*/
 
 .blocpopulaire {
     padding-left: 20px;
@@ -469,10 +498,7 @@ p {
 }
 
 
-/* FIN LES PLUS POPULAIRES */
-
-
-/* DEBUT ACTIVITES A MARSEILLE */
+/*activités marseille*/
 
 .activite {
     margin-bottom: 50px;
@@ -580,13 +606,7 @@ p {
 }
 
 
-/* FIN ACTIVITES A MARSEILLE*/
-
-
-/* FIN DU CORPS */
-
-
-/* DEBUT DU FOOTER */
+/* Footer */
 
 footer {
     padding: 40px 50px 50px;
@@ -608,19 +628,15 @@ footer a:hover {
 }
 
 
-/* FIN DU FOOTER */
-
-
 /*version responsive*/
+
+
+/* tablette paysage */
 
 @media screen and (max-width: 1295px) {
     .sizeLiens12 {
         margin-left: 35%;
     }
-    /*.cubedetailhebergement{
-        min-height: 150px;
-    }*/
-    /*à enlever car rétrécit la taille des photos en version tablette*/
     .sizehebergement {
         min-height: auto;
         padding: 20px;
@@ -634,6 +650,9 @@ footer a:hover {
     }
 }
 
+
+/* tablette portrait */
+
 @media screen and (max-width:1024px) {
     .sizetitreh {
         font-size: 16px;
@@ -641,11 +660,15 @@ footer a:hover {
     .sizesoustitre {
         font-size: 14.5px;
     }
+    /* Footer - Tablet */
     footer div {
         padding: 10px;
         margin: 0 10px;
     }
 }
+
+
+/* mobile paysage iphone X */
 
 @media screen and (max-width:990px) {
     .mobilefiltrewrap {
@@ -675,6 +698,9 @@ footer a:hover {
         padding: 5%;
     }
 }
+
+
+/* mobile paysage */
 
 @media screen and (max-width:770px) {
     .sizeLiens {
@@ -731,6 +757,9 @@ footer a:hover {
         margin-top: 5px;
     }
 }
+
+
+/* mobile portrait */
 
 @media screen and (max-width:600px) {
     .sizeLiens12 {
@@ -827,6 +856,7 @@ footer a:hover {
         padding-left: 5%;
         margin-top: 0;
     }
+    /* Footer - Mobile */
     footer {
         flex-direction: column;
         padding: 45px 30px;

@@ -5,41 +5,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
-    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
-    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3d79397626.js" crossorigin="anonymous"></script>
-    <link href="./style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--DEBUT BAR DE NAVIGATION -->
+    <!--lien de navigation-->
     <nav class="sizeNav">
         <div class="sizeLiens flexBetween">
-            <div class="mobiletitreprgrph"> <img class="logo" src="./img/logo.png" alt="logo"></div>
+            <div class="mobiletitreprgrph"> <img class="logo margeLogo" src="./img/logo.png" alt="logo"></div>
+
+            <!--rajout d'une div qui rassemble hébergement et activité-->
             <div class="sizeLiens12 flexCentre">
+                <!--séparation de la barre navigation en 2: regrouper "hebgt & activités" puis s'inscrire-->
                 <div class="sizeLien sizeLienmobile flexCentre bordureNav"><a class="colorLien2  colorbleu decorationNone" href="#hebergement">Hébergements</a></div>
                 <div class="sizeLien sizeLienmobile flexCentre bordureNav"><a class="colorLien2 decorationNone" href="#activites">Activités</a></div>
             </div>
             <div class="sizeLien flexCentre bordureNav"><a class="textegras colorbleu decorationNone" href="#">S'inscrire</a></div>
+
         </div>
     </nav>
-    <!--FIN BAR DE NAVIGATION -->
-    <!--DEBUT HEADER ET FILTRES -->
     <header>
         <section>
-            <!-- DEBUT TITRE DE PAGE -->
+            <!--titre et sous-titre de la page-->
             <div class="mobiletitreprgrph">
                 <h1 class="textegras">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <!-- FIN TITRE DE PAGE -->
 
-            <!-- DEBUT BARRE DE RECHERCHE -->
+            <!--barre de recherche-->
             <div class="bordureSearch flexCentre">
                 <div class="backgris flexCentre iconSize"><i class="fas fa-map-marker-alt"></i></div>
                 <div><input class="recherche flexCentre bordureNone paddingSearch" type="search" value="Marseille, France"></div>
@@ -47,12 +42,13 @@
                     <span class="mobilenone">Rechercher</span>
                     <span class="desktopnone"><i class="fas fa-search"></i></span> </div>
             </div>
-            <!-- FIN BARRE DE RECHERCHE -->
-            <!-- DEBUT DES FILTRES -->
+            <!--catégories filtes-->
             <div class="mobilefiltrewrap filtre margeFiltre">
                 <div class="margeentrettrefiltre">
                     <h3>Filtres</h3>
                 </div>
+                <!--rajout de 2 div flexAround pour séparer en mode mobile (il y a 2 eléments de chaque)-->
+                <!--1e bloc: div 1-->
                 <div class="flexAround">
                     <div class="mobileeconomique flexBetween filtreTexteIcon">
                         <i class="fas fa-money-bill-wave fa-lg filtreIcons flexCentre"></i>
@@ -63,7 +59,9 @@
                         <div class="filtreText textegras flexCentre">Familial</div>
                     </div>
                 </div>
+                <!--2e bloc: div 2-->
                 <div class="mobilefamilial mobilefiltrewrap flexAround">
+                    <!--mettre les catégories de filtre les uns au dessus des autres-->
                     <div class="flexBetween filtreTexteIcon">
                         <i class="fas fa-heart fa-lg filtreIcons flexCentre"></i>
                         <div class="filtreText textegras flexCentre">Romantique</div>
@@ -74,17 +72,15 @@
                     </div>
                 </div>
             </div>
-            <!-- FIN DES FILTRES -->
             <div class="mobileinformation information">
                 <div class="parentIcon flexCentre"><i class="fas fa-info fa-xs colorbleu"></i></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
     </header>
-    <!--FIN HEADER ET FILTRES -->
-    <!-- DEBUT HEBERGEMENTS & LES + POPULAIRES -->
+    <!--hébergements-->
     <section id="hebergement" class="flexAround">
-        <!-- DEBUT DIV HEBERGEMENTS -->
+        <!--séparer 2 blocs-->
         <div class="flexColumnAround sizehebergement backgris blochebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="bloc1 flexBetween">
@@ -177,15 +173,11 @@
             </div>
             <p class="textegras">Afficher plus</p>
         </div>
-        <!-- FIN DIV HEBERGEMENTS -->
-        <!-- DEBUT DIV LES + POPULAIRES  -->
         <div class="sizepopulaire blocpopulaire backgris">
-            <!-- DEBUT TITRE LES + POPULAIRES  -->
             <div class="flexBetween">
                 <h2 class="textegras titlepop">Les plus populaires</h2>
                 <div><i class="fas fa-chart-line fa-2x"></i></div>
             </div>
-            <!-- DEBUT FIN LES + POPULAIRES  -->
             <div class="flexColumnAround">
                 <div class="blocpopulaire12 cubepopulaire flexCentre">
                     <div class="imgpopulaire1"></div>
@@ -233,77 +225,59 @@
                 </div>
             </div>
         </div>
-        <!-- FIN DIV LES + POPULAIRES -->
     </section>
-    <!-- FIN HEBERGEMENTS & LES + POPULAIRES -->
-    <!--  DEBUT ACTIVITES -->
     <section id="activites" class="activite">
         <h2 class="mobiletitreprgrph">Activités à Marseille</h2>
-        <!-- DEBUT DIV PRINCIPALE -->
         <div class="blocactivite flexBetween">
-            <!-- DEBUT DIV VIEU PORT -->
             <div class="cubeactivite flexColumnCentre">
                 <div class="imgactivite1"></div>
                 <div class="hauteurtitre titreactivite">
                     <h3>Vieux Port</h3>
                 </div>
             </div>
-            <!-- FIN DIV VIEU PORT -->
-            <!-- DEBUT DIV DOUBLE ACTIVITES -->
+
             <div class="blocactivite2356 flexColumnBetween">
-                <!-- DEBUT DIV FORT DE POMEGUES-->
                 <div class="cubeactivite2356 flexColumnCentre">
                     <div class="imgactivite2"></div>
                     <div class="hauteurtitre titreactivite">
                         <h3>Fort de Pomègues</h3>
                     </div>
                 </div>
-                <!-- FIN DIV FORT DE POMEGUES -->
-                <!-- DEBUT DIV ILES DU FRIOUL -->
+
+
                 <div class="cubeactivite2356 flexColumnCentre">
                     <div class="imgactivite3"></div>
                     <div class="hauteurtitre titreactivite">
                         <h3>Iles du Frioul</h3>
                     </div>
                 </div>
-                <!-- FIN DIV ILES DU FRIOUL -->
             </div>
-            <!-- FIN DIV DOUBLE ACTIVITES -->
-            <!-- DEBUT DIV PARC NATIONAL -->
             <div class="cubeactivite flexColumnCentre">
                 <div class="imgactivite4"></div>
                 <div class="hauteurtitre titreactivite">
                     <h3>Parc National des Calanques</h3>
                 </div>
             </div>
-            <!-- FIN DIV PARC NATIONAL -->
-            <!-- DEBUT DIV DOUBLE ACTIVITES -->
+
             <div class="blocactivite2356 flexColumnBetween">
-                <!-- DEBUT DIV NOTRE DAME -->
                 <div class="cubeactivite2356 flexColumnCentre">
                     <div class="imgactivite5"></div>
                     <div class="hauteurtitre titreactivite">
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </div>
-                <!-- FIN DIV NOTRE DAME -->
-                <!-- DEBUT DIV PARC LONGCHAMP -->
+
                 <div class="cubeactivite2356 flexColumnCentre">
                     <div class="imgactivite6"></div>
                     <div class="hauteurtitre titreactivite">
                         <h3>Parc Longchamp</h3>
                     </div>
                 </div>
-                <!-- FIN DIV PARC LONGCHAMP -->
             </div>
-            <!-- FIN DIV DOUBLE ACTIVITES -->
         </div>
-        <!-- FIN DIV PRINCIPALE -->
     </section>
-    <!--  FIN ACTIVITES -->
-    <!-- DEBUT FOOTER -->
+    <!-- Footer -->
     <footer class="flex">
-        <!-- DEBUT DIV A PROPOS -->
         <div class="about">
             <h3>A propos</h3>
             <ul>
@@ -312,8 +286,6 @@
                 <li><a href="#">Données et confidentialités</a></li>
             </ul>
         </div>
-        <!-- FIN DIV A PROPOS -->
-        <!-- DEBUT DIV NOS HEBERGEMENTS -->
         <div class="ourHotels">
             <h3>Nos hébergements</h3>
             <ul>
@@ -321,8 +293,6 @@
                 <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <!-- FIN DIV NOS HEBERGEMENTS -->
-        <!-- DEBUT DIV ASSISTANCE -->
         <div class="assistance">
             <h3>Assistance</h3>
             <ul>
@@ -330,9 +300,7 @@
                 <li><a href="#">Nous contacter</a></li>
             </ul>
         </div>
-        <!-- FIN DIV ASSISTANCE -->
     </footer>
-    <!-- FIN FOOTER -->
 </body>
 
 </html>
