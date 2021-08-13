@@ -472,6 +472,117 @@ p {
 /* FIN LES PLUS POPULAIRES */
 
 
+/* DEBUT ACTIVITES A MARSEILLE */
+
+.activite {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.blocactivite {
+    width: 100%;
+    height: 600px;
+}
+
+.blocactivite2356 {
+    width: 23%;
+    height: 600px;
+}
+
+.imgactivite1 {
+    background-image: url("./img/vieux_port.jpg");
+    width: 100%;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgactivite2 {
+    background-image: url("./img/fort_de_pomegues.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgactivite3 {
+    background-image: url("./img/ile_du_frioul.jpg");
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgactivite4 {
+    background-image: url("./img/parc_national_des_calanques.jpg");
+    width: 100%;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgactivite5 {
+    background-image: url("./img/notre_dame_de_la_garde.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.imgactivite6 {
+    background-image: url("./img/parc_longchamp.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.cubeactivite {
+    /*réglages du bloc activité*/
+    width: 23%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+
+.cubeactivite2356 {
+    /*réglages du bloc activité*/
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+
+.cubeactivite:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.cubeactivite2356:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.hauteurtitre {
+    height: 70px;
+}
+
+.titreactivite {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 95%;
+}
+
+
+/* FIN ACTIVITES A MARSEILLE*/
+
+
 /* FIN DU CORPS */
 
 
